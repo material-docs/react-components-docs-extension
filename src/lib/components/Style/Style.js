@@ -4,8 +4,12 @@
  */
 
 import React from "react";
+
+// MaterialDocs components
 import TableRow from "@material-docs/core/components/TableRow";
 import TableCell from "@material-docs/core/components/TableCell";
+
+// Utilities
 import {withStyles} from "@material-ui/styles";
 import {withLang} from "@material-docs/core";
 import useStylesSettings from "../../hooks/useStylesSettings";

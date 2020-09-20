@@ -1,4 +1,4 @@
-name: material-docs-publish-npm
+name: publish-npm
 
 on:
   #   release:
@@ -18,7 +18,7 @@ jobs:
           node-version: 12
       - run: yarn --frozen-lockfile
       - run: yarn install
-      - run: yarn run test
+#      - run: yarn run test
 
   publish-npm:
     needs: build

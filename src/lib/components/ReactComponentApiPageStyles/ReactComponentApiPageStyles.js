@@ -4,13 +4,18 @@
  */
 
 import React from "react";
-import withLang from "@material-docs/core/HOCs/withLang";
+
+// MaterialDocs components
 import Table from "@material-docs/core/components/Table";
 import TableRow from "@material-docs/core/components/TableRow";
 import TableCell from "@material-docs/core/components/TableCell";
 import TableHead from "@material-docs/core/components/TableHead";
 import TableBody from "@material-docs/core/components/TableBody";
+
+// Utilities
+import withLang from "@material-docs/core/HOCs/withLang";
 import {StylesSettingsContext} from "../../hooks/useStylesSettings/useStylesSettings";
+
 
 export const displayName = "RCDE-ReactComponentApiPageStyles";
 

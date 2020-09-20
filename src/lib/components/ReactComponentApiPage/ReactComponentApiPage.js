@@ -4,24 +4,29 @@
  */
 
 import React from "react";
-import {withStyles} from "@material-ui/styles";
+
+// MaterialDocs components
 import DocsPage from "@material-docs/core/components/DocsPage";
-import Markdown from "@material-docs/core/components/Markdown";
 import H1 from "@material-docs/core/components/H1";
 import H2 from "@material-docs/core/components/H2";
+
+// Utilities
+import {withStyles} from "@material-ui/styles";
 import withLang from "@material-docs/core/HOCs/withLang";
 import withLocalLang from "@material-docs/core/HOCs/withLocalLang";
-import H3 from "@material-docs/core/components/H3";
-import Code from "@material-docs/core/components/Code";
-import localLang from "./lang.json";
 import getContainerByType from "@material-docs/core/utils/getContainerByType";
 
+// Display names of the components
 import {displayName as propsDisplayName} from "../ReactComponentApiPageProps";
 import {displayName as stylesDisplayName} from "../ReactComponentApiPageStyles";
 import {displayName as importDisplayName} from "../ReactComponentApiPageImport";
 import {displayName as footerDisplayName} from "../ReactComponentApiPageFooter";
 import {displayName as summaryDisplayName} from "../ReactComponentApiPageSummary";
 import {displayName as detailsDisplayName} from "../ReactComponentApiPageDetails";
+
+// Langs
+import localLang from "./lang.json";
+
 
 export const displayName = "RCDE-ReactComponentApiPage"
 

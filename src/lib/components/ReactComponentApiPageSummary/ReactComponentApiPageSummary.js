@@ -4,7 +4,7 @@
  */
 
 import React from "react";
-import withLang from "@material-docs/core/HOCs/withLang";
+
 
 export const displayName = "RCDE-ReactComponentApiPageSummary";
 

@@ -4,14 +4,18 @@
  */
 
 import React from "react";
+
+// MaterialDocs components
 import Table from "@material-docs/core/components/Table";
 import TableHead from "@material-docs/core/components/TableHead";
 import TableBody from "@material-docs/core/components/TableBody";
 import TableRow from "@material-docs/core/components/TableRow";
 import TableCell from "@material-docs/core/components/TableCell";
+
+// Utilities
 import {withLang} from "@material-docs/core";
-import {withStyles} from "@material-ui/styles";
 import {PropsSettingsContext} from "../../hooks/usePropsSettings/usePropsSettings";
+
 
 export const displayName = "RCDE-ReactComponentApiPageProps";
 

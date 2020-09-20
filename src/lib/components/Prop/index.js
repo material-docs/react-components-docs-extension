@@ -3,4 +3,4 @@
  * Copyright (C) 2020.
  */
 
-export {default} from "./DocsComponentApiPage";
+export {default, displayName} from "./Prop";

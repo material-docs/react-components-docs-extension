@@ -3,11 +3,12 @@
  * Copyright (C) 2020. 
  */
 
+import {DocsPageProps} from "@material-docs/core/components/DocsPage/DocsPage";
 
-import DocsPage from "@material-docs/core/components/DocsPage";
+export const displayName: string;
 
-export interface DocsComponentApiPageProps
-    extends DocsPage{
+export interface ReactComponentApiPage_Props
+    extends DocsPageProps {
     props?: {
         name: string,
         type?: string,
@@ -20,3 +21,5 @@ export interface DocsComponentApiPageProps
         description?: string
     };
 }
+
+export default function ReactComponentApiPage(props: ReactComponentApiPage_Props): JSX.Element;

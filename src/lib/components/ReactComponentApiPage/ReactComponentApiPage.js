@@ -10,6 +10,9 @@ import DocsPage from "@material-docs/core/components/DocsPage";
 import H1 from "@material-docs/core/components/H1";
 import H2 from "@material-docs/core/components/H2";
 
+// PropTypes validators
+import PropTypes from "prop-types";
+
 // Utilities
 import {withStyles} from "@material-ui/styles";
 import withLang from "@material-docs/core/HOCs/withLang";
@@ -77,5 +80,9 @@ const ReactComponentApiPage = React.forwardRef(function(props, ref) {
 });
 
 ReactComponentApiPage.displayName = displayName;
+
+ReactComponentApiPage.propTypes = {
+    name: PropTypes.string,
+}
 
 export default withStyles({}, {name: displayName})(withLocalLang(localLang)(withLang(ReactComponentApiPage)));

@@ -19,6 +19,11 @@ export interface ReactComponentApiPageStylesProps
      * @type boolean
      */
     noDescription?: boolean;
+    /**
+     * enableMarkdown - if true, children text will be wrapped in Markdown component.
+     * @type boolean
+     */
+    enableMarkdown?: boolean;
 }
 
 export default function ReactComponentApiPageStyles(props: ReactComponentApiPageStylesProps): JSX.Element;

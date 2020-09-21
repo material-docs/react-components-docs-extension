@@ -7,6 +7,10 @@ import {createStyles} from "@material-ui/styles";
 import {purple} from "@material-ui/core/colors";
 
 export const styles = theme => createStyles( {
+    nameLabel: {
+        fontFamily: "monospace",
+        fontSize: 15
+    },
     globalLabel: {
         fontFamily: "monospace",
         color: purple[700],

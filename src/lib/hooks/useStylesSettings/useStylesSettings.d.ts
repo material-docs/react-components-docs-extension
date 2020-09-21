@@ -14,6 +14,11 @@ export interface StylesSettingsContext {
      * @type boolean
      */
     enableDescription: boolean;
+    /**
+     * enableMarkdown - if true, children text will be wrapped in Markdown component.
+     * @type boolean
+     */
+    enableMarkdown: false,
 }
 
 export default function useStylesSettings(): StylesSettingsContext;

@@ -13,17 +13,22 @@ export interface ReactComponentApiPagePropsProps
      * noType - if true, type column will not be shown.
      * @type boolean
      */
-    noType?: boolean,
+    noType?: boolean;
     /**
      * noDefault - if true, default value column will not be shown.
      * @type boolean
      */
-    noDefault?: boolean,
+    noDefault?: boolean;
     /**
      * noDescription - if true, description column will not be shown.
      * @type boolean
      */
-    noDescription?: boolean,
+    noDescription?: boolean;
+    /**
+     * enableMarkdown - if true, children text will be wrapped in Markdown component.
+     * @type boolean
+     */
+    enableMarkdown?: boolean;
 }
 
 export default function ReactComponentApiPageProps(props: ReactComponentApiPagePropsProps): JSX.Element;

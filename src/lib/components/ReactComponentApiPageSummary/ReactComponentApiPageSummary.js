@@ -5,6 +5,9 @@
 
 import React from "react";
 
+// PropTypes validators
+import PropTypes from "prop-types";
+
 
 export const displayName = "RCDE-ReactComponentApiPageSummary";
 
@@ -16,5 +19,9 @@ const ReactComponentApiPageSummary = React.forwardRef(function (props, ref) {
 });
 
 ReactComponentApiPageSummary.displayName = displayName;
+
+ReactComponentApiPageSummary.propTypes = {
+    children: PropTypes.node,
+}
 
 export default ReactComponentApiPageSummary;

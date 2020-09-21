@@ -12,6 +12,9 @@ import TableBody from "@material-docs/core/components/TableBody";
 import TableRow from "@material-docs/core/components/TableRow";
 import TableCell from "@material-docs/core/components/TableCell";
 
+// PropTypes validators
+import PropTypes from "prop-types";
+
 // Utilities
 import {withLang} from "@material-docs/core";
 import {PropsSettingsContext} from "../../hooks/usePropsSettings/usePropsSettings";
@@ -24,6 +27,7 @@ const ReactComponentApiPageProps = React.forwardRef(function(props, ref) {
         noType = false,
         noDefault = false,
         noDescription = false,
+        enableMarkdown = false,
         children,
         className,
         style,
@@ -31,9 +35,10 @@ const ReactComponentApiPageProps = React.forwardRef(function(props, ref) {
     } = props;
     const {lang} = props.lang;
     const locale = lang.locale.extensions.ReactComponentsDocsExtension.DocsComponentApiPage;
+
     return (
         <PropsSettingsContext.Provider
-            value={{enableType: !noType, enableDefault: !noDefault, enableDescription: !noDescription}}
+            value={{enableType: !noType, enableDefault: !noDefault, enableDescription: !noDescription, enableMarkdown}}
         >
             <Table size={"small"} ref={ref} className={className} style={style} {...other}>
                 <TableHead>
@@ -53,5 +58,20 @@ const ReactComponentApiPageProps = React.forwardRef(function(props, ref) {
 });
 
 ReactComponentApiPageProps.displayName = displayName;
+
+ReactComponentApiPageProps.defaultProps = {
+    noType: false,
+    noDefault: false,
+    noDescription: false,
+    enableMarkdown: false,
+}
+
+ReactComponentApiPageProps.propTypes = {
+    noType: PropTypes.bool,
+    noDefault: PropTypes.bool,
+    noDescription: PropTypes.bool,
+    enableMarkdown: PropTypes.bool,
+    children: PropTypes.node,
+}
 
 export default withLang(ReactComponentApiPageProps);

@@ -25,7 +25,7 @@ import {displayName as summaryDisplayName} from "../ReactComponentApiPageSummary
 import {displayName as detailsDisplayName} from "../ReactComponentApiPageDetails";
 
 // Langs
-import localLang from "./lang.json";
+import localLang from "./lang";
 
 
 export const displayName = "RCDE-ReactComponentApiPage"

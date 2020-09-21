@@ -60,9 +60,9 @@ ReactDOM.render(
                         </Code>
                         <Markdown>You can learn more about the difference by [reading this guide]().</Markdown>
                     </ReactComponentApiPageImport>
-                    <ReactComponentApiPageProps>
-                        <Prop name={"children"} type={"node"} def={"null"}>Hello darkness</Prop>
-                        <Prop name={"lol"} type={"node"} def={"null"}>Hello darkness</Prop>
+                    <ReactComponentApiPageProps enableMarkdown>
+                        <Prop name={"children"} type={"node"} def={"null"}>Hello __darkness__ my old friend</Prop>
+                        <Prop name={"lol"} type={"__node__"} def={"null"}>Hello darkness</Prop>
                         <Prop name={"kek"} type={"node"} def={"null"}>Hello darkness</Prop>
                     </ReactComponentApiPageProps>
                     <ReactComponentApiPageStyles>

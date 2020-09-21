@@ -12,6 +12,9 @@ import TableCell from "@material-docs/core/components/TableCell";
 import TableHead from "@material-docs/core/components/TableHead";
 import TableBody from "@material-docs/core/components/TableBody";
 
+// PropTypes validators
+import PropTypes from "prop-types";
+
 // Utilities
 import withLang from "@material-docs/core/HOCs/withLang";
 import {StylesSettingsContext} from "../../hooks/useStylesSettings/useStylesSettings";
@@ -23,6 +26,7 @@ const ReactComponentApiPageStyles = React.forwardRef(function (props, ref) {
     const {
         noGlobal = false,
         noDescription = false,
+        enableMarkdown = false,
         children,
         className,
         style,
@@ -33,7 +37,7 @@ const ReactComponentApiPageStyles = React.forwardRef(function (props, ref) {
 
     return (
         <StylesSettingsContext.Provider
-            value={{enableGlobal: !noGlobal, enableDescription: !noDescription}}
+            value={{enableGlobal: !noGlobal, enableDescription: !noDescription, enableMarkdown}}
         >
             <Table ref={ref} className={className} style={style} {...other}>
                 <TableHead>
@@ -52,5 +56,18 @@ const ReactComponentApiPageStyles = React.forwardRef(function (props, ref) {
 });
 
 ReactComponentApiPageStyles.displayName = displayName;
+
+ReactComponentApiPageStyles.defaultProps = {
+    noGlobal: false,
+    noDescription: false,
+    enableMarkdown: false,
+}
+
+ReactComponentApiPageStyles.propTypes = {
+    noGlobal: PropTypes.bool,
+    noDescription: PropTypes.bool,
+    enableMarkdown: PropTypes.bool,
+    children: PropTypes.node,
+}
 
 export default withLang(ReactComponentApiPageStyles);

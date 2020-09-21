@@ -5,6 +5,9 @@
 
 import React from "react";
 
+// PropTypes validators
+import PropTypes from "prop-types";
+
 
 export const displayName = "RCDE-ReactComponentApiPageFooter";
 
@@ -16,5 +19,9 @@ const ReactComponentApiPageFooter = React.forwardRef(function (props, ref) {
 });
 
 ReactComponentApiPageFooter.displayName = displayName;
+
+ReactComponentApiPageFooter.propTypes = {
+    children: PropTypes.node,
+}
 
 export default ReactComponentApiPageFooter;

@@ -9,6 +9,7 @@ export const PropsSettingsContext = React.createContext({
     enableType: true,
     enableDefault: true,
     enableDescription: true,
+    enableMarkdown: false,
 });
 
 const usePropsSettings = () => React.useContext(PropsSettingsContext);

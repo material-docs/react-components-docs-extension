@@ -1,6 +1,6 @@
 {
   "name": "@material-docs/react-components-docs-extension",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
   "description": "Material Docs framework extension for creating React components API pages.",
   "homepage": "http://material-docs.com/",
@@ -29,7 +29,7 @@
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
-    "@material-docs/core": "^0.4.2",
+    "@material-docs/core": "^0.4.3",
     "@material-ui/core": "^4.11.0",
     "@material-ui/styles": "^4.10.0",
     "clsx": "^1.1.1",

@@ -24,6 +24,9 @@ const ReactComponentApiPageStyles = React.forwardRef(function (props, ref) {
         noGlobal = false,
         noDescription = false,
         children,
+        className,
+        style,
+        ...other
     } = props;
     const {lang} = props.lang;
     const locale = lang.locale.extensions.ReactComponentsDocsExtension.DocsComponentApiPage;
@@ -32,7 +35,7 @@ const ReactComponentApiPageStyles = React.forwardRef(function (props, ref) {
         <StylesSettingsContext.Provider
             value={{enableGlobal: !noGlobal, enableDescription: !noDescription}}
         >
-            <Table ref={ref}>
+            <Table ref={ref} className={className} style={style} {...other}>
                 <TableHead>
                     <TableRow>
                         <TableCell>{locale.styles.name}</TableCell>

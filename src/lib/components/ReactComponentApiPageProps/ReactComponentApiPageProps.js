@@ -25,6 +25,9 @@ const ReactComponentApiPageProps = React.forwardRef(function(props, ref) {
         noDefault = false,
         noDescription = false,
         children,
+        className,
+        style,
+        ...other
     } = props;
     const {lang} = props.lang;
     const locale = lang.locale.extensions.ReactComponentsDocsExtension.DocsComponentApiPage;
@@ -32,7 +35,7 @@ const ReactComponentApiPageProps = React.forwardRef(function(props, ref) {
         <PropsSettingsContext.Provider
             value={{enableType: !noType, enableDefault: !noDefault, enableDescription: !noDescription}}
         >
-            <Table size={"small"} ref={ref}>
+            <Table size={"small"} ref={ref} className={className} style={style} {...other}>
                 <TableHead>
                     <TableRow>
                         <TableCell>{locale.props.name}</TableCell>

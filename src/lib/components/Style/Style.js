@@ -4,6 +4,7 @@
  */
 
 import React from "react";
+import {styles} from "./styles";
 
 // MaterialDocs components
 import TableRow from "@material-docs/core/components/TableRow";
@@ -21,12 +22,16 @@ const Style = React.forwardRef(function(props, ref) {
         name,
         global,
         children,
+        classes,
+        className,
+        style,
+        ...other
     } = props;
     const settings = useStylesSettings();
     return (
-        <TableRow ref={ref}>
+        <TableRow ref={ref} className={className} style={style} {...other}>
             <TableCell>{name}</TableCell>
-            {settings.enableGlobal && <TableCell>{global}</TableCell>}
+            {settings.enableGlobal && <TableCell><span className={classes.globalLabel}>{global}</span></TableCell>}
             {settings.enableDescription && <TableCell>{children}</TableCell>}
         </TableRow>
     );
@@ -34,4 +39,4 @@ const Style = React.forwardRef(function(props, ref) {
 
 Style.displayName = displayName;
 
-export default withLang(withStyles({}, {name: displayName})(Style));
+export default withLang(withStyles(styles, {name: displayName})(Style));

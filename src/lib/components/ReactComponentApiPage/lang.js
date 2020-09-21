@@ -1,4 +1,4 @@
-{
+export default {
   "locale": {
     "extensions": {
       "ReactComponentsDocsExtension": {

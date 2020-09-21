@@ -3,12 +3,12 @@
  * Copyright (C) 2020. 
  */
 
-import {Containerable} from "@material-docs/core";
+import {Containerable, Stylable} from "@material-docs/core";
 
 export const displayName: string;
 
 export interface ReactComponentApiPagePropsProps
-    extends Containerable{
+    extends Containerable, Stylable {
     /**
      * noType - if true, type column will not be shown.
      * @type boolean

@@ -3,12 +3,12 @@
  * Copyright (C) 2020. 
  */
 
-import {Containerable} from "@material-docs/core";
+import {Containerable, Stylable} from "@material-docs/core";
 
 export const displayName: string;
 
 export interface StyleProps
-    extends Containerable {
+    extends Containerable, Stylable {
     /**
      * name - name of the style rule.
      * @type string | any

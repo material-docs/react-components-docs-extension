@@ -3,12 +3,12 @@
  * Copyright (C) 2020.
  */
 
-import {Containerable} from "@material-docs/core";
+import {Containerable, Stylable} from "@material-docs/core";
 
 export const displayName: string;
 
 export interface ReactComponentApiPageImportProps
-    extends Containerable {
+    extends Containerable, Stylable {
 }
 
 export default function ReactComponentApiPageImport(props: ReactComponentApiPageImportProps): JSX.Element;

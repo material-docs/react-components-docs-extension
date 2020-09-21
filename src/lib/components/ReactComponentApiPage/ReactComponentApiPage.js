@@ -34,6 +34,8 @@ const ReactComponentApiPage = React.forwardRef(function(props, ref) {
     const {
         name,
         children,
+        className,
+        style,
         ...other
     } = props;
     const {lang} = other.lang;
@@ -59,7 +61,7 @@ const ReactComponentApiPage = React.forwardRef(function(props, ref) {
     }, [children]);
 
     return(
-        <DocsPage {...other} name={name} ref={ref}>
+        <DocsPage {...other} name={name} ref={ref} className={className} style={style}>
             <H1 noDivider>{name}</H1>
             {content.summary}
             <H2>{locale.import}</H2>

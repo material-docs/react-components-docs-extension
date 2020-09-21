@@ -1,6 +1,6 @@
 {
-  "name": "react-components-docs-extension",
-  "version": "0.1.1",
+  "name": "@material-docs/react-components-docs-extension",
+  "version": "0.1.2",
   "private": false,
   "description": "Material Docs framework extension for creating React components API pages.",
   "homepage": "http://material-docs.com/",

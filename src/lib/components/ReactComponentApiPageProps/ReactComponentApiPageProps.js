@@ -40,7 +40,7 @@ const ReactComponentApiPageProps = React.forwardRef(function(props, ref) {
         <PropsSettingsContext.Provider
             value={{enableType: !noType, enableDefault: !noDefault, enableDescription: !noDescription, enableMarkdown}}
         >
-            <Table size={"small"} ref={ref} className={className} style={style} {...other}>
+            <Table ref={ref} className={className} style={style} {...other}>
                 <TableHead>
                     <TableRow>
                         <TableCell>{locale.props.name}</TableCell>
